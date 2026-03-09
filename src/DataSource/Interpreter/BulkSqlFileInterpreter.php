@@ -1,8 +1,8 @@
 <?php
 
-namespace TorqIT\DataImporterExtensionsBundle\DataSource\Interpreter;
+namespace TorqNorth\DataImporterExtensionsBundle\DataSource\Interpreter;
 
-use TorqIT\DataImporterExtensionsBundle\DataSource\Interpreter\BulkCsvFileInterpreter;
+use TorqNorth\DataImporterExtensionsBundle\DataSource\Interpreter\BulkCsvFileInterpreter;
 
 class BulkSqlFileInterpreter extends BulkCsvFileInterpreter
 {

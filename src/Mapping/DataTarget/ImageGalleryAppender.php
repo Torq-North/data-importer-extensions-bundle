@@ -2,7 +2,7 @@
 
 
 
-namespace TorqIT\DataImporterExtensionsBundle\Mapping\DataTarget;
+namespace TorqNorth\DataImporterExtensionsBundle\Mapping\DataTarget;
 
 use Pimcore\Bundle\DataImporterBundle\Exception\InvalidConfigurationException;
 use Pimcore\Bundle\DataImporterBundle\Mapping\DataTarget\Direct;

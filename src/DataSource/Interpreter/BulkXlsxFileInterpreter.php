@@ -2,7 +2,7 @@
 
 
 
-namespace TorqIT\DataImporterExtensionsBundle\DataSource\Interpreter;
+namespace TorqNorth\DataImporterExtensionsBundle\DataSource\Interpreter;
 
 use Carbon\Carbon;
 use OpenSpout\Writer\CSV\Options;
@@ -13,7 +13,7 @@ use OpenSpout\Common\Entity\Row;
 use Symfony\Component\ExpressionLanguage\ExpressionLanguage;
 use Pimcore\Bundle\DataImporterBundle\Processing\ImportProcessingService;
 use Pimcore\Db;
-use TorqIT\DataImporterExtensionsBundle\DataSource\DataLoader\Xlsx\XlsxDataLoaderFactory;
+use TorqNorth\DataImporterExtensionsBundle\DataSource\DataLoader\Xlsx\XlsxDataLoaderFactory;
 use Pimcore\Bundle\DataImporterBundle\Preview\Model\PreviewData;
 
 class BulkXlsxFileInterpreter extends XlsxFileInterpreterWithColumnNames

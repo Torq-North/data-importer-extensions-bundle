@@ -1,6 +1,6 @@
 <?php
 
-namespace TorqIT\DataImporterExtensionsBundle\DataSource\Interpreter;
+namespace TorqNorth\DataImporterExtensionsBundle\DataSource\Interpreter;
 
 use Carbon\Carbon;
 use Doctrine\DBAL\Exception;

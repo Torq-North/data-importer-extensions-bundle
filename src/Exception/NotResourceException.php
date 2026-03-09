@@ -1,6 +1,6 @@
 <?php
 
-namespace TorqIT\DataImporterExtensionsBundle\Exception;
+namespace TorqNorth\DataImporterExtensionsBundle\Exception;
 
 use Exception;
 

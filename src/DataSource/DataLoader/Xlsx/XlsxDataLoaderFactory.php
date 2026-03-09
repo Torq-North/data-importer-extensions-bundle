@@ -1,6 +1,6 @@
 <?php
 
-namespace TorqIT\DataImporterExtensionsBundle\DataSource\DataLoader\Xlsx;
+namespace TorqNorth\DataImporterExtensionsBundle\DataSource\DataLoader\Xlsx;
 
 class XlsxDataLoaderFactory
 {

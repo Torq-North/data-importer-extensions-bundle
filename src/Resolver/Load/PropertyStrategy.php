@@ -2,7 +2,7 @@
 
 
 
-namespace TorqIT\DataImporterExtensionsBundle\Resolver\Load;
+namespace TorqNorth\DataImporterExtensionsBundle\Resolver\Load;
 
 use Pimcore\Bundle\DataImporterBundle\Exception\InvalidConfigurationException;
 use Pimcore\Model\Element\ElementInterface;

@@ -1,6 +1,6 @@
 <?php
 
-namespace TorqIT\DataImporterExtensionsBundle\Controller;
+namespace TorqNorth\DataImporterExtensionsBundle\Controller;
 
 use Pimcore\Bundle\DataImporterBundle\Controller\ConfigDataObjectController;
 use Pimcore\Bundle\DataImporterBundle\Mapping\Type\TransformationDataTypeService;

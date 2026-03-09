@@ -1,19 +1,7 @@
 {
-  "name": "torqit/data-importer-extensions-bundle",
+  "name": "torqnorth/data-importer-extensions-bundle",
   "type": "pimcore-bundle",
   "license": "proprietary",
-  "authors": [
-    {
-      "name": "Jeremy Noonan",
-      "email": "jeremy.noonan@torqit.ca",
-      "homepage": "https://www.torqit.ca"
-    },
-    {
-      "name": "Mateusz Soroka",
-      "email": "m.soroka@lemonmind.com",
-      "homepage": "https://lemonmind.com"
-    }
-  ],
   "require": {
     "pimcore/data-importer": "^2.0",
     "openspout/openspout": "^4.0",
@@ -29,13 +17,13 @@
   },
   "autoload": {
     "psr-4": {
-      "TorqIT\\DataImporterExtensionsBundle\\": "src"
+      "TorqNorth\\DataImporterExtensionsBundle\\": "src"
     }
   },
   "extra": {
     "pimcore": {
       "bundles": [
-        "TorqIT\\DataImporterExtensionsBundle\\TorqITDataImporterExtensionsBundle"
+        "TorqNorth\\DataImporterExtensionsBundle\\TorqNorthDataImporterExtensionsBundle"
       ]
     }
   }

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace TorqIT\DataImporterExtensionsBundle\DataSource\Loader;
+namespace TorqNorth\DataImporterExtensionsBundle\DataSource\Loader;
 
 use Doctrine\DBAL\Connection;
 use League\Flysystem\Filesystem;
@@ -11,10 +11,10 @@ use Symfony\Component;
 use Pimcore;
 use Pimcore\Bundle\DataImporterBundle\DataSource\Loader\DataLoaderInterface;
 use Pimcore\Bundle\DataImporterBundle\Exception\InvalidConfigurationException;
-use TorqIT\DataImporterExtensionsBundle\Exception\FetchDatabaseDataException;
-use TorqIT\DataImporterExtensionsBundle\Exception\InvalidConnectionException;
-use TorqIT\DataImporterExtensionsBundle\Exception\NotResourceException;
-use TorqIT\DataImporterExtensionsBundle\Exception\ParseArrayToJsonException;
+use TorqNorth\DataImporterExtensionsBundle\Exception\FetchDatabaseDataException;
+use TorqNorth\DataImporterExtensionsBundle\Exception\InvalidConnectionException;
+use TorqNorth\DataImporterExtensionsBundle\Exception\NotResourceException;
+use TorqNorth\DataImporterExtensionsBundle\Exception\ParseArrayToJsonException;
 
 class BulkSqlDataLoader implements DataLoaderInterface
 {

@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace TorqIT\DataImporterExtensionsBundle\Controller;
+namespace TorqNorth\DataImporterExtensionsBundle\Controller;
 
 use Pimcore\Bundle\AdminBundle\Controller\AdminAbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\Routing\Attribute\Route;
-use TorqIT\DataImporterExtensionsBundle\Exception\DoctrineConnectionsNotReturnedAsArrayException;
+use TorqNorth\DataImporterExtensionsBundle\Exception\DoctrineConnectionsNotReturnedAsArrayException;
 
 #[Route("/admin/pimcoredataimporter")]
 class ConnectionController extends AdminAbstractController

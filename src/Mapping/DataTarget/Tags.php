@@ -1,6 +1,6 @@
 <?php
 
-namespace TorqIT\DataImporterExtensionsBundle\Mapping\DataTarget;
+namespace TorqNorth\DataImporterExtensionsBundle\Mapping\DataTarget;
 
 use Pimcore\Model\Element\ElementInterface;
 use Pimcore\Bundle\DataImporterBundle\Mapping\DataTarget\DataTargetInterface;

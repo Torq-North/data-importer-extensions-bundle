@@ -1,6 +1,6 @@
 <?php
 
-namespace TorqIT\DataImporterExtensionsBundle\DataSource\DataLoader\Xlsx;
+namespace TorqNorth\DataImporterExtensionsBundle\DataSource\DataLoader\Xlsx;
 
 use OpenSpout\Common\Entity\Cell\FormulaCell;
 use OpenSpout\Reader\XLSX\Reader;

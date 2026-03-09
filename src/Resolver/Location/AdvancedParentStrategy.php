@@ -2,7 +2,7 @@
 
 
 
-namespace TorqIT\DataImporterExtensionsBundle\Resolver\Location;
+namespace TorqNorth\DataImporterExtensionsBundle\Resolver\Location;
 
 use Pimcore\Bundle\DataImporterBundle\Exception\InvalidConfigurationException;
 use Pimcore\Bundle\DataImporterBundle\Tool\DataObjectLoader;
@@ -13,7 +13,7 @@ use Pimcore\Bundle\DataImporterBundle\Resolver\Location\LocationStrategyInterfac
 use Pimcore\Model\Element\Service as ElementService;
 use Symfony\Component\Lock\LockFactory;
 use Symfony\Component\Lock\PersistingStoreInterface;
-use TorqIT\DataImporterExtensionsBundle\Helper\AdvancedPathBuilder;
+use TorqNorth\DataImporterExtensionsBundle\Helper\AdvancedPathBuilder;
 
 class AdvancedParentStrategy implements LocationStrategyInterface
 {

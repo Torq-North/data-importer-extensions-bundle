@@ -1,6 +1,6 @@
 <?php
 
-namespace TorqIT\DataImporterExtensionsBundle\Mapping\Type;
+namespace TorqNorth\DataImporterExtensionsBundle\Mapping\Type;
 
 use Pimcore\Bundle\DataImporterBundle\Mapping\Type\TransformationDataTypeService as BaseTransformationDataTypeService;
 
