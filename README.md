@@ -1,19 +1,19 @@
 ---
 title: Data Importer
 ---
- 
-# Torq IT Data Importer Extensions
+
+# Data Importer Extensions
 
 This extension adds a number of additional features to the [Pimcore Data Importer](https://github.com/pimcore/data-importer) bundle.
 
 ## Path Syntax
 
-A number of our extensions make use of the **Path** syntax that allows for Paths to be created based on values in the import. 
+A number of our extensions make use of the **Path** syntax that allows for Paths to be created based on values in the import.
 
 Take for example an Excel File:
 | Year | Make | Model | Color |
-| ---  | ---  | ---   | ---   |
-| 2015 | GMC  | Sierra| White |
+| --- | --- | --- | --- |
+| 2015 | GMC | Sierra| White |
 | 2001 | Chevrolet | Silverado | Blue |
 
 To build the Path `/Products/Cars/GMC/Sierra/2015` using Path Syntax would be `/Products/Cars/$[1]/$[2]/$[0]`. The numerical values correspond to the indexes of the values in the Excel file (starting at 0).
@@ -36,6 +36,7 @@ For an XML file:
     </Car>
 </Cars>
 ```
+
 the **Path Syntax** would use the Attribute names instead `/Products/Cars/$[Make]/$[Model]/$[Year]`
 
 ## Data Interpreters
@@ -48,12 +49,10 @@ The Advanced XLSX interpreter makes a few improvements over the default XLSX int
 
 This interpreter uses `openspout` as the Excel parser. Open Spout XLSX parsing uses **much** less memory than the default XLSX parses which makes use of `PHPOffice`. We've seen files that required >4GB RAM on PHPOffice use less than 50MB with openspout. We've also detected a memory leak in some cases with the PHPOffice implementation where RAM gets allocated on the server and never released.
 
-
-| Configuration Option   | Description                                    | 
-| ---------------------- | ---------------------------------------------- |
-| Unique Column Indexes  | Accepts a comma separated list of column indexes to treat as unique values. Used to filter the rows in an excel file. For example an excel file with the headers `Brand,Model,SubModel` and you want to import a unique `Brand` object for each new `Brand` you encounter. In this case, use value `0` to only take unique values from the first column in the Excel file. If you want to create a data object for each `Brand` and `Model` use `0,1` as the value.                                           |
-| Row Filter             | This accepts a [Symfony Expression](https://symfony.com/doc/current/reference/formats/expression_language.html) to be applied to the rows of the Excel file. Each row in the Excel file get's handed to the expression evaluator as a variable named `row`. The expression `row[0] == 'Apple'` would only process rows where the value of the first column is Apple.
-
+| Configuration Option  | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Unique Column Indexes | Accepts a comma separated list of column indexes to treat as unique values. Used to filter the rows in an excel file. For example an excel file with the headers `Brand,Model,SubModel` and you want to import a unique `Brand` object for each new `Brand` you encounter. In this case, use value `0` to only take unique values from the first column in the Excel file. If you want to create a data object for each `Brand` and `Model` use `0,1` as the value. |
+| Row Filter            | This accepts a [Symfony Expression](https://symfony.com/doc/current/reference/formats/expression_language.html) to be applied to the rows of the Excel file. Each row in the Excel file get's handed to the expression evaluator as a variable named `row`. The expression `row[0] == 'Apple'` would only process rows where the value of the first column is Apple.                                                                                                |
 
 ### Bulk XLSX Interpreter
 
@@ -83,10 +82,10 @@ doctrine:
 
 ### Bulk CSV Interpreter
 
-The Bulk CSV Interpreter has the same options as the regular CSV interpreter but like the Bulk XLSX Interpreter it uses `LOAD LOCAL INFILE` to queue data rows. 
+The Bulk CSV Interpreter has the same options as the regular CSV interpreter but like the Bulk XLSX Interpreter it uses `LOAD LOCAL INFILE` to queue data rows.
 Please see the [Bulk XLSX Interpreter Section](#bulk-xlsx-interpreter) for limitions and requirments.
 
-### SQL Interpreter 
+### SQL Interpreter
 
 This Interpreter is to be used when using the [SQL Data Loader](#sql-data-loader).
 Behind the scenes this uses the Bulk CSV Interpreter as it is very fast. If you run into errors please see the [Bulk XLSX Interpreter Section](#bulk-xlsx-interpreter) for limitions and requirments.
@@ -99,7 +98,7 @@ This Interpreter is an expansion upon the default XML based interpreter that wil
 
 ### SQL Data Loader
 
-The SQL Data Loader uses [DBAL](https://www.doctrine-project.org/projects/dbal.html) to allow data to be loaded from a SQL source. Connections to any database supported by DBAL will work provided they are configured correctly inside of `database.yaml`. (Database configuration can be placed in any valid Symfony config file, provided its in the correct format as can be seen in `database.yaml`). 
+The SQL Data Loader uses [DBAL](https://www.doctrine-project.org/projects/dbal.html) to allow data to be loaded from a SQL source. Connections to any database supported by DBAL will work provided they are configured correctly inside of `database.yaml`. (Database configuration can be placed in any valid Symfony config file, provided its in the correct format as can be seen in `database.yaml`).
 
 To set up a SQL loader
 
@@ -114,7 +113,7 @@ Data Targets control where data flows as its being mapped to Data Objects.
 
 ### Advanced Classification Store
 
-This is the same as the [Classification Store](https://pimcore.com/docs/platform/Data_Importer/Configuration/Mapping_Configuration/Data_Target/#classification-store) Data Target except it adds the `Overwrite` options as seen on the `Direct` Data Target. 
+This is the same as the [Classification Store](https://pimcore.com/docs/platform/Data_Importer/Configuration/Mapping_Configuration/Data_Target/#classification-store) Data Target except it adds the `Overwrite` options as seen on the `Direct` Data Target.
 
 ### Image Gallery Appender
 
@@ -123,7 +122,6 @@ This can be used to add an image into an Image Gallery field.
 ### Property
 
 This is used to set a property on a Data Object.
-
 
 ## Operators
 
@@ -157,7 +155,7 @@ This allows you to do string replaces using [preg_replace](https://www.php.net/m
 
 This allows loading objects using the **Path** syntax described earlier in this ReadMe.
 
-Using the example Excel file in the **Path** section you could load the Data Object at `/Products/Cars/GMC/Sierra/2015` using Path Syntax `/Products/Cars/$[1]/$[2]/$[0]`. 
+Using the example Excel file in the **Path** section you could load the Data Object at `/Products/Cars/GMC/Sierra/2015` using Path Syntax `/Products/Cars/$[1]/$[2]/$[0]`.
 
 ### Property
 
@@ -165,11 +163,10 @@ This allows a data object to be loaded based on the value of a property stored o
 
 **This assumes that the property value is unique**. If a non-unique value exists, it'll be a random object returned that matches the criteria.
 
-
 ## Element Creation
 
 ### Advanced Parent Strategy
 
 This allows locating objects using the **Path** syntax described earlier in this ReadMe.
 
-Using the example Excel file in the **Path** section you could create a Data Object with parent `/Products/Cars/GMC/Sierra/2015` using Path Syntax `/Products/Cars/$[1]/$[2]/$[0]`. 
+Using the example Excel file in the **Path** section you could create a Data Object with parent `/Products/Cars/GMC/Sierra/2015` using Path Syntax `/Products/Cars/$[1]/$[2]/$[0]`.

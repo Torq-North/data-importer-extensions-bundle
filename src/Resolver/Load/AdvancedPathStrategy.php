@@ -13,12 +13,12 @@
  *  @license    http://www.pimcore.org/license     GPLv3 and PCL
  */
 
-namespace TorqIT\DataImporterExtensionsBundle\Resolver\Load;
+namespace TorqNorth\DataImporterExtensionsBundle\Resolver\Load;
 
 use Pimcore\Bundle\DataImporterBundle\Exception\InvalidConfigurationException;
 use Pimcore\Model\Element\ElementInterface;
 use Pimcore\Model\Element\Service as ElementService;
-use TorqIT\DataImporterExtensionsBundle\Helper\AdvancedPathBuilder;
+use TorqNorth\DataImporterExtensionsBundle\Helper\AdvancedPathBuilder;
 
 class AdvancedPathStrategy extends \Pimcore\Bundle\DataImporterBundle\Resolver\Load\AbstractLoad
 {

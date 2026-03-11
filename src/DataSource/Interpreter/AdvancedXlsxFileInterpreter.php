@@ -13,11 +13,11 @@
  *  @license    http://www.pimcore.org/license     GPLv3 and PCL
  */
 
-namespace TorqIT\DataImporterExtensionsBundle\DataSource\Interpreter;
+namespace TorqNorth\DataImporterExtensionsBundle\DataSource\Interpreter;
 
 use Pimcore\Bundle\DataImporterBundle\Preview\Model\PreviewData;
 use Symfony\Component\ExpressionLanguage\ExpressionLanguage;
-use TorqIT\DataImporterExtensionsBundle\DataSource\DataLoader\Xlsx\XlsxDataLoaderFactory;
+use TorqNorth\DataImporterExtensionsBundle\DataSource\DataLoader\Xlsx\XlsxDataLoaderFactory;
 
 class AdvancedXlsxFileInterpreter extends \Pimcore\Bundle\DataImporterBundle\DataSource\Interpreter\XlsxFileInterpreter
 {

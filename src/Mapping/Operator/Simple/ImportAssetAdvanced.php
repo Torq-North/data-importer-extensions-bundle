@@ -1,10 +1,10 @@
 <?php
 
-namespace TorqIT\DataImporterExtensionsBundle\Mapping\Operator\Simple;
+namespace TorqNorth\DataImporterExtensionsBundle\Mapping\Operator\Simple;
 
 use Pimcore\Bundle\DataImporterBundle\Mapping\Operator\Simple\ImportAsset;
 use Pimcore\Model\Element\DuplicateFullPathException;
-use TorqIT\DataImporterExtensionsBundle\Helper\AdvancedPathBuilder;
+use TorqNorth\DataImporterExtensionsBundle\Helper\AdvancedPathBuilder;
 
 class ImportAssetAdvanced extends ImportAsset 
 {

@@ -13,7 +13,7 @@
  *  @license    http://www.pimcore.org/license     GPLv3 and PCL
  */
 
-namespace TorqIT\DataImporterExtensionsBundle\DataSource\Interpreter;
+namespace TorqNorth\DataImporterExtensionsBundle\DataSource\Interpreter;
 
 use Symfony\Component\ExpressionLanguage\ExpressionLanguage;
 use Carbon\Carbon;
@@ -21,7 +21,7 @@ use OpenSpout\Writer\CSV\Options;
 use OpenSpout\Writer\CSV\Writer;
 use Pimcore\Bundle\DataImporterBundle\Processing\ImportProcessingService;
 use Pimcore\Db;
-use TorqIT\DataImporterExtensionsBundle\DataSource\DataLoader\Xlsx\XlsxDataLoaderFactory;
+use TorqNorth\DataImporterExtensionsBundle\DataSource\DataLoader\Xlsx\XlsxDataLoaderFactory;
 use OpenSpout\Common\Entity\Cell;
 use OpenSpout\Common\Entity\Row;
 

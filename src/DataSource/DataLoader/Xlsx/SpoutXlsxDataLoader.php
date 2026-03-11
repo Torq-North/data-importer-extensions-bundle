@@ -1,6 +1,6 @@
 <?php
 
-namespace TorqIT\DataImporterExtensionsBundle\DataSource\DataLoader\Xlsx;
+namespace TorqNorth\DataImporterExtensionsBundle\DataSource\DataLoader\Xlsx;
 
 use OpenSpout\Reader\XLSX\Reader;
 use PhpOffice\PhpSpreadsheet\IOFactory;

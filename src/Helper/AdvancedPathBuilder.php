@@ -1,6 +1,6 @@
 <?php
 
-namespace TorqIT\DataImporterExtensionsBundle\Helper;
+namespace TorqNorth\DataImporterExtensionsBundle\Helper;
 
 use Pimcore\Model\Element\Service as ElementService;
 

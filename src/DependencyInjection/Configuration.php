@@ -1,6 +1,6 @@
 <?php
 
-namespace TorqIT\DataImporterExtensionsBundle\DependencyInjection;
+namespace TorqNorth\DataImporterExtensionsBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

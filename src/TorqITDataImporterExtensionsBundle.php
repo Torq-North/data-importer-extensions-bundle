@@ -1,11 +1,11 @@
 <?php
 
-namespace TorqIT\DataImporterExtensionsBundle;
+namespace TorqNorth\DataImporterExtensionsBundle;
 
 use Pimcore\Extension\Bundle\AbstractPimcoreBundle;
 use Pimcore\Extension\Bundle\PimcoreBundleAdminClassicInterface;
 
-class TorqITDataImporterExtensionsBundle extends AbstractPimcoreBundle implements PimcoreBundleAdminClassicInterface
+class TorqNorthDataImporterExtensionsBundle extends AbstractPimcoreBundle implements PimcoreBundleAdminClassicInterface
 {
 
     public function getAdminIframePath()

@@ -1,6 +1,6 @@
 <?php
 
-namespace TorqIT\DataImporterExtensionsBundle\Mapping\Operator\Simple;
+namespace TorqNorth\DataImporterExtensionsBundle\Mapping\Operator\Simple;
 
 
 use Pimcore\Bundle\DataImporterBundle\Mapping\Operator\AbstractOperator;
